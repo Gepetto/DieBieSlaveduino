@@ -1,0 +1,157 @@
+
+Easy Configurator, configuration engine  V_3_1 
+
+log created on Fri Sep 20 10:08:59 2019
+
+Analyzing the project file
+
+Easy Configurator project DieBieSlaveduino.prj
+
+OUTPUTS_TAG
+Line 4 --- output_8                uint8_t
+Line 5 --- output_16               uint16_t
+Line 6 --- output_int8             int8_t
+Line 7 --- output_int16            int16_t
+Line 8 --- output_float            float
+INPUTS_TAG
+Line 10 --- input_8                 uint8_t
+Line 11 --- input_16                uint16_t
+Line 12 --- input_int8              int8_t
+Line 13 --- input_int16             int16_t
+Line 14 --- input_float             float
+INFO_TAG
+0x00000B97
+LAAS_CNRS
+0x1
+0x1
+DieBieSlaveduino
+DieBieSlaveduino
+END_TAG
+
+The DieBieSlaveduino.prj configuration file is correct
+
+ByteNumOut 10
+ByteNumIn  10
+PdoNumOut  5
+PdoNumIn   5
+
+Creating the DieBieSlaveduino.xml file
+
+PROJECT_TAG   DieBieSlaveduino.prj
+VENDOID_TAG   00000B97
+VEN_NAM_TAG   LAAS_CNRS
+PRO_COD_TAG   1
+REVISIO_TAG   1
+DEV_NAM_TAG   DieBieSlaveduino
+DEV_NAM_TAG   DieBieSlaveduino
+
+FIRST_TAG
+
+Output entries
+          <Entry>
+            <Index>#x5</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>output_float</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x5</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>output_16</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x5</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>output_int16</Name>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x5</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>output_int8</Name>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x5</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>output_8</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+
+SECOND_TAG
+
+Input entries
+          <Entry>
+            <Index>#x6</Index>
+            <SubIndex>1</SubIndex>
+            <BitLen>32</BitLen>
+            <Name>input_float</Name>
+            <DataType>REAL</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6</Index>
+            <SubIndex>2</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>input_16</Name>
+            <DataType>UINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6</Index>
+            <SubIndex>3</SubIndex>
+            <BitLen>16</BitLen>
+            <Name>input_int16</Name>
+            <DataType>INT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6</Index>
+            <SubIndex>4</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>input_int8</Name>
+            <DataType>SINT</DataType>
+          </Entry>
+          <Entry>
+            <Index>#x6</Index>
+            <SubIndex>5</SubIndex>
+            <BitLen>8</BitLen>
+            <Name>input_8</Name>
+            <DataType>USINT</DataType>
+          </Entry>
+
+LAST_TAG
+
+The DieBieSlaveduino.xml file has been created
+
+Creating the DieBieSlaveduino.h file
+
+#define CUST_BYTE_NUM_OUT	10
+#define CUST_BYTE_NUM_IN	10
+#define TOT_BYTE_NUM_ROUND_OUT	12
+#define TOT_BYTE_NUM_ROUND_IN	12
+
+
+Output entries
+		float       output_float;
+		uint16_t    output_16;
+		int16_t     output_int16;
+		int8_t      output_int8;
+		uint8_t     output_8;
+
+Input entries
+		float       input_float;
+		uint16_t    input_16;
+		int16_t     input_int16;
+		int8_t      input_int8;
+		uint8_t     input_8;
+
+The DieBieSlaveduino.h file has been created
+
+Creating the DieBieSlaveduino.bin file
+
+
+The DieBieSlaveduino.bin file has been created
