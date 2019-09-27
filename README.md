@@ -10,5 +10,8 @@ As the microcontroller is an stm32f303ret6 we can use the arduino framework with
 
 The ethercat library from EasyCAT : https://www.bausano.net/en/hardware/ethercat-e-arduino/easycat.html
 
+For more details look at the [wiki](https://github.com/Gepetto/DieBieSlaveduino/wiki).
+
+
 ![alt text](/photos/dbstop.jpeg?raw=true "Title")
 
